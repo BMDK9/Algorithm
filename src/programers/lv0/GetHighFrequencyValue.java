@@ -18,6 +18,8 @@ public class GetHighFrequencyValue {
             if (max < inputNumber[i]) {
                 max = inputNumber[i];
                 manyNumber = i;
+            } else if (max == inputNumber[i]) {
+                manyNumber = -1;
             }
         }
         answer = manyNumber;

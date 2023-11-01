@@ -16,13 +16,14 @@ public class GetHighFrequencyValuePrac {
             int input = sc.nextInt();
             inputList.put(input, inputList.getOrDefault(input, 0) + 1);
             // put 은 ( 여기에, 이걸 넣는다)
-            // getOrDefault 는 (get 할 것, get 이 null 이라면 입력할 것 = 실행할 것)
+            // getOrDefault 는 (get 할 것, [get 할 것이 없다면(=null) 이라면 입력할 것] = 실행할 것)
         }
 
         int max = 0;
         int result = 0;
 
         for (int inputKey : inputList.keySet()) {       // inputKey 에 KeySet 한다. (Key 값을 Set 하는데 모든  Key 값이 나오도록)
+            System.out.println("숫자"+ inputKey+ "을 "+ inputList.get(inputKey)+ "번 입력했습니다.");
             int a = inputList.get(inputKey);
             if (max < a) {                              // 최빈값 1개
                 max = a;

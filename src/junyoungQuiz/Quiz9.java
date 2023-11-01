@@ -24,6 +24,7 @@ public class Quiz9 {
 
         for (int inputKey : inputList.keySet()) {       // inputKey 에 KeySet 한다. (Key 값을 Set 하는데 모든  Key 값이 나오도록)
             int a = inputList.get(inputKey);
+            System.out.println("숫자"+ inputKey+ "을 "+ inputList.get(inputKey)+ "번 입력했습니다.");
             if (max < a) {                              // 최빈값 1개
                 max = a;
                 result = inputKey;

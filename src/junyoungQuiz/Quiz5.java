@@ -11,11 +11,11 @@ public class Quiz5 {
             Scanner sc = new Scanner(System.in);
             System.out.print((i + 1) + "번째 수: ");
             int j = sc.nextInt();
-            arr[j] = arr[j] + 1;
+            arr[j] += 1;
         }                                       // 숫자별 입력 횟수 배열로 카운트
 
-        int max = 0;
-        int result = 0;
+        int max = 0;                             // 가장 많이 입력된 숫자의 좌표를 확인
+        int result = 0;                          // 가장 많이 입력된 숫자의 좌표를 추출
         for (int i = 1; i < arr.length; i++) {
             if (max < arr[i]) {
                 max = arr[i];

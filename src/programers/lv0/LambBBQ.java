@@ -13,4 +13,5 @@ public class LambBBQ {
 
         return lamb + drink;
     }
+//        return n * 12000 + k * 2000 - (n / 10 * 2000);        맘에 드는 코드
 }

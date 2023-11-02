@@ -21,7 +21,5 @@ public class AntArmy {
         return answer;
     }
 }
-//    public int solution(int hp) {
-//        return hp / 5 + (hp % 5 / 3) + hp % 5 % 3;
-//    }
+//        return hp / 5 + (hp % 5 / 3) + hp % 5 % 3;        맘에 드는 코드
 

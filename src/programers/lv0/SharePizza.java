@@ -8,4 +8,5 @@ public class SharePizza {
         }
         return answer;
     }
+    //  return (n + 6) / 7;                 // 맘에 드는 코드
 }

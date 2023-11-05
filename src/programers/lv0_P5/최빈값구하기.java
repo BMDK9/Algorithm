@@ -1,9 +1,9 @@
-package programers.lv0_P1;
+package programers.lv0_P5;
 
-public class GetHighFrequencyValue {
+public class 최빈값구하기 {
     public int solution(int[] array) {
         int answer = 0;
-
+                                                        // 배열 index 를 입력한 숫자, index 값을 입력한 횟수
         int[] inputNumber = new int[1001];              // 0~1000까지의 숫자
         for (int i = 0; i < array.length; i++) {         //100번 입력
             if (array[i] >= 0 && array[i] <= 1000) {

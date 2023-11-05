@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class ArrayAverage {
+public class 개미군단 {
     public double solution(int[] numbers) {
         double answer = 0;
         for (int i = 0; i < numbers.length; i++) {

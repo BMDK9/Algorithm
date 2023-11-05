@@ -1,8 +1,6 @@
 package programers.lv0_P1;
 
-import java.util.Arrays;
-
-public class ReverseString {
+public class 문자열뒤집기 {
 
     public String solution(String my_string) {
         char[] ing = my_string.toCharArray();                       // 배열을 이용한 방법
@@ -12,7 +10,7 @@ public class ReverseString {
             reverse[reverseIndex] = ing[i];
             reverseIndex++;
         }
-        return new String(reverse); // or String.valueOf(reverse)   // 알고 있는 것만 이용
+        return new String(reverse); // or String.valueOf(reverse);   // 알고 있는 것만 이용
 
                                                                     // 여기서부터 몰랐음
 //        String answer = "";                                       // charAt( )을 사용한 방법

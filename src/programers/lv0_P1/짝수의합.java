@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class SumOfEvenNumbers {
+public class 짝수의합 {
 
     public int solution(int n) {
 //        int answer = 0;

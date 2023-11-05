@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class LambBBQ {
+public class 양꼬치 {
     public int solution(int n, int k) {
         int service = 0;                            // 음료수 서비스 받은 횟수
         int a = n;                                  // 주문한 양꼬치 개수

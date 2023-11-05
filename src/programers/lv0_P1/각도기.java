@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class Protractor {
+public class 각도기 {
     public static void main(String[] args) {
         System.out.println(solution(120));
     }

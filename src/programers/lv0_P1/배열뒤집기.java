@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class ReverseArray {
+public class 배열뒤집기 {
     public int[] solution(int[] num_list) {
         int[] answer = new int[num_list.length];
 //        Stack<Integer> stack = new Stack<>();             // Stack을 사용한 방법

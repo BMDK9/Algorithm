@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class DeleteChar {
+public class 특정문자제거하기 {
     public String solution(String my_string, String letter) {           // 알고 있는 방법으로
         String answer = "";
         char[] chars = my_string.toCharArray();

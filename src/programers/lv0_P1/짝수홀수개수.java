@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class EvenAndOddCount {
+public class 짝수홀수개수 {
     public int[] solution(int[] num_list) {
         int[] answer = new int[2];                      // 짝수[0]와 홀[1]수가 담긴 배열 생성, 초기값 0
 

@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class ArrayElementsLength {
+public class 배열원소의길이 {
     public int[] solution(String[] strlist) {
         int[] answer = new int[strlist.length];                 // 배열의 길이를 매개변수 길이만큼
         for (int i = 0; i < strlist.length; i++) {

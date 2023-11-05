@@ -1,7 +1,7 @@
-package programers.lv0_P1;
+package programers.lv0_P3;
 
 
-public class AntArmy {
+public class 개미군단 {
     public int solution(int hp) {
         int answer = 0;                             // 개미들의 공격 횟수
 

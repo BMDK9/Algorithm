@@ -1,6 +1,6 @@
 package programers.lv0_P1;
 
-public class GetAge {
+public class 나이출력 {
     public static void main(String[] args) {
         System.out.println(solution(40));
     }

@@ -1,17 +1,17 @@
-package programers.lv0_P1;
+package programers.lv0_P5;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class GetHighFrequencyValuePrac {
+public class 최빈값구하기_맵사용 {
     public static void main(String[] args) {
         System.out.println("Map을 활용해서 숫자 5개를 입력 받아 최빈값 구하기" +
                 "\n최빈 값이 두개라면 -1을 출력");
 
         Map<Integer, Integer> inputList = new HashMap<>();                      // 맵을 만든다
         Scanner sc = new Scanner(System.in);
-
+                                                                                // 키 값이 입력한 숫자, 밸류 값이 입력한 횟수
         for (int i = 0; i < 5; i++) {
             int input = sc.nextInt();
             inputList.put(input, inputList.getOrDefault(input, 0) + 1);

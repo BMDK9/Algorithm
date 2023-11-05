@@ -3,10 +3,6 @@ package programers.lv0;
 import java.util.Stack;
 
 public class ReverseArray {
-    public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4};
-        solution(arr);
-    }
 
     public static int[] solution(int[] num_list) {
         int[] answer = new int[num_list.length];

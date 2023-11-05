@@ -1,6 +1,4 @@
-package programers.lv0;
-
-import java.util.ArrayList;
+package programers.lv0_P1;
 
 public class GetHighFrequencyValue {
     public int solution(int[] array) {

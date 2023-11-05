@@ -1,4 +1,4 @@
-package programers.lv0;
+package programers.lv0_P1;
 
 public class EvenAndOddCount {
     public int[] solution(int[] num_list) {

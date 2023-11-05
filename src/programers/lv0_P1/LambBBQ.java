@@ -1,4 +1,4 @@
-package programers.lv0;
+package programers.lv0_P1;
 
 public class LambBBQ {
     public int solution(int n, int k) {

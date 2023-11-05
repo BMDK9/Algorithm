@@ -1,7 +1,4 @@
-package programers.lv0;
-
-import java.util.ArrayList;
-import java.util.List;
+package programers.lv0_P1;
 
 public class Letter {
     public int solution(String message) {

@@ -1,4 +1,4 @@
-package programers.lv0_P1;
+package programers.lv0_16_20;
 
 public class 배열뒤집기 {
     public int[] solution(int[] num_list) {

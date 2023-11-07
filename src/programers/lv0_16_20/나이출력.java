@@ -1,4 +1,4 @@
-package programers.lv0_P1;
+package programers.lv0_16_20;
 
 public class 나이출력 {
     public static void main(String[] args) {

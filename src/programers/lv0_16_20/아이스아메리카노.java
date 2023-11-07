@@ -1,4 +1,4 @@
-package programers.lv0_P2;
+package programers.lv0_16_20;
 
 public class 아이스아메리카노 {
     public int[] solution(int money) {

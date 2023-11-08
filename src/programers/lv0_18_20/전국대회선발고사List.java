@@ -1,8 +1,8 @@
-package programers.lv0_16_20;
+package programers.lv0_18_20;
 
 import java.util.*;
 
-public class 전국대회선발고사 {
+public class 전국대회선발고사List {
     public int solution(int[] rank, boolean[] attendance) {
         int answer = 0;
         // 전국 대회에 선발된 학생 번호들을 등수가 높은 순서대로 각각 a, b, c번

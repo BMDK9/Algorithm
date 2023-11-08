@@ -1,4 +1,4 @@
-package programers.lv0_16_20;
+package programers.lv0_18_20;
 
 public class 양꼬치 {
     public int solution(int n, int k) {

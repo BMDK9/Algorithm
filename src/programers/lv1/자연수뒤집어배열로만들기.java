@@ -9,8 +9,8 @@ public class 자연수뒤집어배열로만들기 {
 
     public static int[] solution(long n) {
 
-        String a = Long.toString(n);
-        int[] answer = new int[a.length()];
+        String string_n = Long.toString(n);
+        int[] answer = new int[string_n.length()];
 
         for (int i = 0; i < answer.length; i++) {
             answer[i] = (int) (n % 10);
@@ -18,7 +18,7 @@ public class 자연수뒤집어배열로만들기 {
         }
         return answer;
 
-//        String string_n = Long.toString(n);           // 변환하는 것으로 푼 것
+//        String string_n = Long.toString(n);           // 단순히 형변환으로만 푼 것
 //        List<Character> char_n = new ArrayList<>();
 //        int[] answer = new int[string_n.length()];
 //

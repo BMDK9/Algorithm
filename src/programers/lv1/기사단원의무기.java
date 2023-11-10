@@ -9,8 +9,10 @@ public class 기사단원의무기 {
     }
 
     public static int solution(int number, int limit, int power) {
+
         int answer = 0;
         int [] knightDmg = new int[number];
+
         for (int i = 1; i <= number; i++) {
             Set<Integer> Dmg = new HashSet<>();
             for (int j = 1; j <= Math.sqrt(i); j++) {  // 약수를 구하는 공식이 있었다.
@@ -21,7 +23,6 @@ public class 기사단원의무기 {
                 knightDmg[i-1] = Dmg.size();
             }
         }
-
         for (int needIron : knightDmg) {
             if (needIron > limit) {
                 needIron = power;

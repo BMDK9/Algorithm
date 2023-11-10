@@ -23,6 +23,7 @@ public class 기사단원의무기 {
                 knightDmg[i-1] = Dmg.size();
             }
         }
+
         for (int needIron : knightDmg) {
             if (needIron > limit) {
                 needIron = power;

@@ -12,8 +12,8 @@ public class 햄버거만들기 {
 
     public static int solution(int[] ingredient) {
         int answer = 0;
-        Stack<Integer> ingredi = new Stack<>();             // 재료를 받아올 스택
-        Stack<Integer> supervise = new Stack<>();           // 재료 순서를 검증할 스택
+        Stack<Integer> ingredi = new Stack<>();             // 재료를 받아올 Stack
+        Stack<Integer> supervise = new Stack<>();           // 재료 순서를 검증할 Stack
         int[] hamburger = {1, 3, 2, 1};                     // 햄버거를 완성하기 위한 재료의 순서
 
         for (int make : ingredient) {                       // 재료를 받아옴

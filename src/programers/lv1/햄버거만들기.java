@@ -6,7 +6,7 @@ import java.util.Stack;
 
 public class 햄버거만들기 {
     public static void main(String[] args) {
-        int[] a = {1, 3, 2, 1, 2, 1, 3, 1, 2};
+        int[] a = {2, 1, 4, 3, 2, 1, 2, 5, 3, 1, 2, 3, 1};
         System.out.println(solution(a));
     }
 
@@ -20,19 +20,21 @@ public class 햄버거만들기 {
             ingredi.push(make);
             if (ingredi.size() >= 4 && ingredi.peek() == hamburger[0]) {
                 boolean success = true;
-                for (int i = 0; i < hamburger.length; i++) {
-                    if (hamburger[i] != ingredi.peek()) {
-                        while (!supervise.isEmpty()) {
-                            ingredi.push(supervise.pop());
-                        }
+
+                for (int j : hamburger) {
+                    if (j != ingredi.peek()) {
                         success = false;
                         break;
                     }
                     supervise.push(ingredi.pop());
                 }
-                supervise.clear();
                 if (success) {
                     answer++;
+                    supervise.clear();
+                } else {
+                    while (!supervise.isEmpty()) {
+                        ingredi.push(supervise.pop());
+                    }
                 }
             }
         }

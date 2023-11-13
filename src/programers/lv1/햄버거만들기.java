@@ -18,10 +18,10 @@ public class 햄버거만들기 {
 
         for (int make : ingredient) {                       // 재료를 받아옴
             ingredi.push(make);
-            if (ingredi.size() >= 4 && ingredi.peek() == hamburger[0]) {    // 검증하기 위한 조건
-                boolean success = true;                     // 검증 결과 태그
+            if (ingredi.size() >= 4 && ingredi.peek() == hamburger[0]) {    // 재료 검증하기 위한 조건
+                boolean success = true;                     // 재료 검증 결과 태그
 
-                for (int j : hamburger) {                   // 검증 실패 조건
+                for (int j : hamburger) {                   // 재료 검증 실패 조건
                     if (j != ingredi.peek()) {
                         success = false;
                         break;
@@ -32,7 +32,7 @@ public class 햄버거만들기 {
                     answer++;
                     supervise.clear();
                 } else {
-                    while (!supervise.isEmpty()) {          // 검증 실패시 공정과정
+                    while (!supervise.isEmpty()) {          // 재료 검증 실패시 공정과정
                         ingredi.push(supervise.pop());
                     }
                 }

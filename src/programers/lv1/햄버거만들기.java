@@ -18,17 +18,17 @@ public class 햄버거만들기 {
 
         for (int make : ingredient) {
             ingredi.push(make);
-            if (ingredi.size() >= 4 && ingredi.peek().equals(1)) {
+            if (ingredi.size() >= 4 && ingredi.peek() == hamburger[0]) {
                 boolean success = true;
-                for (int i = 0; i < 4; i++) {
-                    supervise.push(ingredi.pop());
-                    if (hamburger[i] != supervise.peek()) {
+                for (int i = 0; i < hamburger.length; i++) {
+                    if (hamburger[i] != ingredi.peek()) {
                         while (!supervise.isEmpty()) {
                             ingredi.push(supervise.pop());
                         }
                         success = false;
                         break;
                     }
+                    supervise.push(ingredi.pop());
                 }
                 supervise.clear();
                 if (success) {

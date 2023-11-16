@@ -19,7 +19,7 @@ public class 정수내림차순으로배치하기 {
         }
         return answer;
     }
-//      오름차순으로
+//          오름차순 구하기
 //    public long ChatGPT(long n) {
 //        List<Integer> digits = new ArrayList<>();
 //

@@ -1,6 +1,5 @@
-package programers.middleTest;
+package junyoungQuiz.middleTest;
 
-import javax.swing.plaf.IconUIResource;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -20,7 +19,7 @@ public class middleTest1 {
 
     public void two(int input) {
         char alpabet = 'A';
-
+        // (char)65 = 'A'
         if (input > 0 && input < 27) {
             for (int i = 1; i < input; i++) {
                 alpabet++;
@@ -34,6 +33,8 @@ public class middleTest1 {
     public void three(int[] input) {
         int min = input[0];
         int max = 0;
+//        int min = Integer.MIN_VALUE;
+//        int max = Integer.MAX_VALUE;
         for (int i : input) {
             if (min > i) {
                 min = i;
@@ -67,6 +68,7 @@ public class middleTest1 {
 
     public void four() {
         char[] answer = {'X', 'X', 'O', 'X'};
+//                char b = a; <- 이게 묵시적 변환   XXOO
         for (int i = 1; i <= 4; i++) {
             System.out.println(i + "번은 " + answer[i - 1]);
         }
@@ -85,6 +87,7 @@ public class middleTest1 {
     public void six() {
         Scanner sc = new Scanner(System.in);
         System.out.println("다섯 개의 수를 입력하시오");
+
         Stack<Integer> answer = new Stack<>();
         for (int i = 0; i < 5; i++) {
             answer.push(sc.nextInt());
@@ -99,20 +102,44 @@ public class middleTest1 {
         System.out.println("숫자를 입력하시오.");
         int input = sc.nextInt();
 
-        if (input % 3 == 0) {
-            input = 1;
-        } else {
-            input = 2;
+        switch (input % 3) {
+
+            case 0:
+                System.out.println("3의 배수");
+                break;
+
+            default:
+                System.out.println("3의 배수 아님");
         }
-        while (true) {
-            switch (input) {
-                case 1:
-                    System.out.println("3의 배수");
-                    break;
-                case 2:
-                    System.out.println("3의 배수 아님");
-                    break;
+    }
+
+
+    public void eight() {
+        for (int i = 1; i <= 5; i++) {
+            for (int k = 1; k <= 5; k++) {
+                System.out.print(i + "," + k + "  ");
             }
+            System.out.println();
+        }
+    }
+
+    public void nine() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("가위 바위 보 중 하나를 고르시오. (1. 가위/ 2. 바위/ 3. 보");
+        int input = sc.nextInt();
+        int computer = (int) (Math.random() * 3) + 1;
+
+        System.out.println("나: " + input);
+        System.out.println("컴퓨터: " + computer);
+
+        int vs = ((input + 3) - computer) % 3;
+
+        if (input == computer) {
+            System.out.println("무승부");
+        } else if (vs == 1) {
+            System.out.println("나의 승리다 애송이");
+        } else {
+            System.out.println("나의 패배? 이거 버그 아냐?");
         }
     }
 }

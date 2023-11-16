@@ -14,4 +14,10 @@ public class 하샤드의수 {
         }
         return answer;
     }
+
+    public boolean chatGpt(int x) {
+        int sumOfDigits = Integer.toString(x).chars().map(Character::getNumericValue).sum();
+        return x % sumOfDigits == 0;
+    }
+
 }

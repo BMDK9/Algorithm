@@ -14,8 +14,8 @@ public class 정수내림차순으로배치하기 {
         }
         Collections.sort(intN);
 
-        for (int i = intN.size(); i > 0; i--) {
-            answer += (long) (intN.get(i-1) * (Math.pow(10,i-1)));
+        for (int i = intN.size()-1; i >= 0; i--) {
+            answer += (long) (intN.get(i) * (Math.pow(10,i)));
         }
         return answer;
 

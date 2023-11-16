@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class middleTest1 {
     public static void main(String[] args) {
-
+        eight();
     }
 
 
@@ -87,14 +87,22 @@ public class middleTest1 {
     public void six() {
         Scanner sc = new Scanner(System.in);
         System.out.println("다섯 개의 수를 입력하시오");
+        int[] answer = new int[5];
+        for (int i = answer.length - 1; i >= 0; i--) {
+            answer[i] = sc.nextInt();
+        }
 
-        Stack<Integer> answer = new Stack<>();
-        for (int i = 0; i < 5; i++) {
-            answer.push(sc.nextInt());
+        for (int i = 0; i < answer.length; i++) {
+            System.out.print(answer[i] + "  ");
         }
-        while (!answer.isEmpty()) {
-            System.out.print("역순: " + answer.pop() + " ");
-        }
+
+//        Stack<Integer> answer = new Stack<>();
+//        for (int i = 0; i < 5; i++) {
+//            answer.push(sc.nextInt());
+//        }
+//        while (!answer.isEmpty()) {
+//            System.out.print("역순: " + answer.pop() + " ");
+//        }
     }
 
     public void seven() {
@@ -114,10 +122,28 @@ public class middleTest1 {
     }
 
 
-    public void eight() {
+    public static void eight() {
         for (int i = 1; i <= 5; i++) {
             for (int k = 1; k <= 5; k++) {
                 System.out.print(i + "," + k + "  ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for (int i = 1; i <= 5; i++) {
+            int a = 0;
+            if (i % 2 == 1) {
+                a = 1;
+            }
+            for (int k = 1; k <= 5; k++) {
+                int b = 0;
+                if (a == 1 && k % 2 == 0) {
+                    b = -1;
+                } else if (k % 2 == 0) {
+                    b = 1;
+                }
+                System.out.print((a + b) + "  ");
             }
             System.out.println();
         }

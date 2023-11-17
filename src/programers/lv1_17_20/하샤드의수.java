@@ -1,4 +1,4 @@
-package programers.lv1_15_20;
+package programers.lv1_17_20;
 
 public class 하샤드의수 {
     public boolean solution(int x) {

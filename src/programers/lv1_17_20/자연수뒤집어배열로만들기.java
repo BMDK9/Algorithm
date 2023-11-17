@@ -1,4 +1,4 @@
-package programers.lv1_15_20;
+package programers.lv1_17_20;
 
 public class 자연수뒤집어배열로만들기 {
     public static void main(String[] args) {

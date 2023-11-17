@@ -1,4 +1,4 @@
-package programers.lv1_15_20;
+package programers.lv1_17_20;
 
 public class 두정수사이의합 {
     public long solution(int a, int b) {

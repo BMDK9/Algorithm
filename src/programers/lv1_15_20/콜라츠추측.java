@@ -1,4 +1,4 @@
-package programers.lv1;
+package programers.lv1_15_20;
 
 public class 콜라츠추측 {
     public int solution(int num) {

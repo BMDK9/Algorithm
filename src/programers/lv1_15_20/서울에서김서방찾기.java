@@ -1,7 +1,4 @@
-package programers.lv1;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+package programers.lv1_15_20;
 
 public class 서울에서김서방찾기 {
     public String solution(String[] seoul) {

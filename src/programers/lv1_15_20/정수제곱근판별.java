@@ -1,4 +1,4 @@
-package programers.lv1;
+package programers.lv1_15_20;
 
 public class 정수제곱근판별 {
     public long solution(long n) {

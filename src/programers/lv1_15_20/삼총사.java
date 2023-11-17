@@ -1,4 +1,4 @@
-package programers.lv1;
+package programers.lv1_15_20;
 
 public class 삼총사 {
     public static void main(String[] args) {

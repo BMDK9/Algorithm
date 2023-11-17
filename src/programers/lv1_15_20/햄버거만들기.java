@@ -1,7 +1,5 @@
-package programers.lv1;
+package programers.lv1_15_20;
 
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Stack;
 
 public class 햄버거만들기 {

@@ -33,8 +33,8 @@ public class middleTest1 {
     public void three(int[] input) {
         int min = input[0];
         int max = 0;
-//        int min = Integer.MIN_VALUE;
-//        int max = Integer.MAX_VALUE;
+//        int min = Integer.MAX_VALUE;
+//        int max = Integer.MIN_VALUE;
         for (int i : input) {
             if (min > i) {
                 min = i;
@@ -68,7 +68,7 @@ public class middleTest1 {
 
     public void four() {
         char[] answer = {'X', 'X', 'O', 'X'};
-//                char b = a; <- 이게 묵시적 변환   XXOO
+//                char b = a; <- 이게 묵시적 변환 = 자동형 변환   XXOO
         for (int i = 1; i <= 4; i++) {
             System.out.println(i + "번은 " + answer[i - 1]);
         }
@@ -140,7 +140,9 @@ public class middleTest1 {
                 int b = 0;
                 if (a == 1 && k % 2 == 0) {
                     b = -1;
-                } else if (k % 2 == 0) {
+                    continue;
+                }
+                if (k % 2 == 0) {
                     b = 1;
                 }
                 System.out.print((a + b) + "  ");

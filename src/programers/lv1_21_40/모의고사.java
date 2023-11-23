@@ -1,4 +1,4 @@
-package programers.lv1_20;
+package programers.lv1_21_40;
 
 public class 모의고사 {
     public int[] solution(int[] answers) {

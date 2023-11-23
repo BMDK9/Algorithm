@@ -1,4 +1,4 @@
-package programers.lv1_21_40;
+package programers.lv1_20;
 
 public class 내적 {
     public int solution(int[] a, int[] b) {

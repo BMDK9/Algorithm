@@ -1,4 +1,4 @@
-package programers.lv1_17_20;
+package programers.lv1_20;
 
 public class X만큼간격이있는n개의숫자 {
     public static void main(String[] args) {

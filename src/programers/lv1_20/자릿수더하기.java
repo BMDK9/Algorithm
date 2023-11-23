@@ -1,4 +1,4 @@
-package programers.lv1_17_20;
+package programers.lv1_20;
 
 public class 자릿수더하기 {
     public static void main(String[] args) {

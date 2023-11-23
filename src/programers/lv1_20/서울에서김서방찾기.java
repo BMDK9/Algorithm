@@ -1,4 +1,4 @@
-package programers.lv1_17_20;
+package programers.lv1_20;
 
 public class 서울에서김서방찾기 {
     public String solution(String[] seoul) {

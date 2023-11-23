@@ -1,4 +1,4 @@
-package programers.lv1_17_20;
+package programers.lv1_20;
 
 public class 문자열을정수로바꾸기 {
     public static void main(String[] args) {

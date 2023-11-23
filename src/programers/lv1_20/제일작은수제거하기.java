@@ -1,4 +1,4 @@
-package programers.lv1_17_20;
+package programers.lv1_20;
 
 public class 제일작은수제거하기 {
     public int[] solution(int[] arr) {

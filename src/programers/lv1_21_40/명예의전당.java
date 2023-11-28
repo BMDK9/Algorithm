@@ -6,7 +6,7 @@ import java.util.List;
 
 public class 명예의전당 {
 
-    public static int[] solution(int k, int[] score) {
+    public int[] solution(int k, int[] score) {
         int[] answer = new int[score.length];
         List<Integer> singer = new ArrayList<>();
 

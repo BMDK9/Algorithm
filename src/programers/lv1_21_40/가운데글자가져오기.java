@@ -6,9 +6,10 @@ public class 가운데글자가져오기 {
         String answer = "";
 
         if (s.length() % 2 == 0) {
+//                      String       char           int
             answer = String.valueOf(s.charAt((s.length() / 2) - 1));
         }
-
+//                      String       char           int
         answer += String.valueOf(s.charAt(s.length()/2));
 
         return answer;

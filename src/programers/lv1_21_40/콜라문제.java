@@ -1,6 +1,7 @@
 package programers.lv1_21_40;
 
 public class 콜라문제 {
+
     public int solution(int a, int b, int n) {
 //      매점에 줘야하는 빈병 a, 새로 받는 콜라 b, 소유중인 빈병 n
 //      새로 받은 콜라는 빈병이 된다.

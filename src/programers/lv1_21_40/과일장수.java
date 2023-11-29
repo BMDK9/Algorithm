@@ -7,9 +7,9 @@ public class 과일장수 {
 //        사과 1 ~ k점, 상자 가격 = 최저 사과 점수 * m
 //        제일 많은 점수를 받을 수 있는 방법은?
         int answer = 0; // 박스 가격 총합
-        Arrays.sort(score);
+        Arrays.sort(score); // 사과 점수 오름차순 정렬
 
-        int a = 1;
+        int a = 1;  // 사과 박스 개수
         for (int i = score.length -1; i >= 0; i--) {
 //            if (i - m < -m) {     // 문제의 원인이었다.
 //                break;            // 이미 밑에서 박스 내의

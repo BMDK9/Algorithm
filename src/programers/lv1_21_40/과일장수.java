@@ -3,7 +3,6 @@ package programers.lv1_21_40;
 import java.util.Arrays;
 
 public class 과일장수 {
-
     public int solution(int k, int m, int[] score) {
 //        사과 1 ~ k점, 상자 가격 = 최저 사과 점수 * m
 //        제일 많은 점수를 받을 수 있는 방법은?

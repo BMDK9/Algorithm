@@ -1,17 +1,28 @@
 package programers.lv1_20;
 
 public class 수박수박수박수 {
+
     public String solution(int n) {
 
-        String answer = "";
-        for (int i = 1; i <= n; i++) {
-
-            if (i % 2 == 1) {
-                answer += "수";
-            } else {
-                answer += "박";
-            }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            sb.append(i % 2 == 0 ? "수" : "박");
         }
-        return answer;
+        return sb.toString();
+
+//        ===============================================
+
+//        String answer = "";
+//        for (int i = 0; i < n; i++) {
+//
+//            switch (i % 2) {
+//                case 0 : answer += "수";
+//                break;
+//
+//                default : answer += "박";
+//            }
+//
+//        }
+//        return answer;
     }
 }

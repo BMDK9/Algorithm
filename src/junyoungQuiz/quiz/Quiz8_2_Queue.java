@@ -1,4 +1,4 @@
-package junyoungQuiz;
+package junyoungQuiz.quiz;
 
 import java.util.LinkedList;
 import java.util.Queue;

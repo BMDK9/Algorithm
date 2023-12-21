@@ -12,10 +12,8 @@ public class 시저암호 {
                 continue;
             }
             char ch = ' ';
-
 //            char ch;
 //            ch = (Character.isUpperCase(A)) ? 'A' : 'a';
-
             if (A >= 65 && A <= 90) {
                 ch = 'A';
             }

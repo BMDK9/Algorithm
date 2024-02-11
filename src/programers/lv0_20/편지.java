@@ -1,4 +1,4 @@
-package programers.lv0_18_20;
+package programers.lv0_20;
 
 public class 편지 {
     public int solution(String message) {

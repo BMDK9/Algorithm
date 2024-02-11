@@ -1,4 +1,4 @@
-package programers.lv0_18_20;
+package programers.lv0_20;
 
 public class 특정문자제거하기 {
     public String solution(String my_string, String letter) {           // 알고 있는 방법으로

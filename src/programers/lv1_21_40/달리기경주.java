@@ -15,13 +15,13 @@ public class 달리기경주 {
         }
         for (String calledPlayer : callings) {
             int i = map.get(calledPlayer);
-            String front = answer[i - 1];
+            String frontPlayer = answer[i - 1];
 
             answer[i-1] = calledPlayer;
-            answer[i] = front;
+            answer[i] = frontPlayer;
 
             map.replace(calledPlayer, i - 1);
-            map.replace(front, i);
+            map.replace(frontPlayer, i);
         }
         return answer;
     }

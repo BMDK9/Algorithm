@@ -1,45 +1,43 @@
-//package programers.lv1_21_40;
-//
-//public class 모의고사 {
-//    public int[] solution(int[] answers) {
-////        int[] omrCard = new int[answers.length];
-//        int i = 1;
-//        int su1 = 1;
-//        int su2 = 2;
-//        int su22 = 1;
-//        int su3 = 3;
-//        int answer3 = 0;
-//        int[] count = new int[3];
-//
-//        while (i <= answers.length) {
-//
-////            ========== 수포자 1
-//            if (answers[i] == su1) count[0]++;
-//            su1++;
-//            if (su1 == 6) su1 = 1;
-//
-////            =========== 수포자 2
-////            홀수 문제 답은 2로 고정
-//
-//            if (i % 2 == 0) {   // 짝수 문제일 경우
-//                if (answers[i] == su22) count[1]++;
-//                su22++;
-//                if (su22 == 2) su22 += 1;
-//                if (su22 == 6) su22 = 1;
-//            }
-//
-//            if (answers[i] == su2) count[1]++; // 홀수 문제일 경우
-//
-////            ============ 수포자 3
-////            31245
-//            answer3 = su3;
-//            if (answers[i] == answer3) count[2]++;
-//
-//            if (su3 == 3) answers3 = 1;
-//            su3++;
-//            if (su3 == 6) su3 == 3;
-//
-//
-//        }
-//    }
-//}
+package programers.lv1_21_40;
+
+import java.util.ArrayList;
+
+public class 모의고사 {
+    public int[] solution(int[] answers) {
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = {2, 1, 2, 3, 2, 4, 2, 5};
+        int[] c = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+
+        int[] count = new int[3];
+
+        for (int i = 0; i < answers.length; i++) {
+            if (answers[i] == a[i % a.length]) {
+                count[0]++;
+            }
+            if (answers[i] == b[i % b.length]) {
+                count[1]++;
+            }
+            if (answers[i] == c[i % c.length]) {
+                count[2]++;
+            }
+        }
+
+        // 최다 정답자 찾기
+        int maxCount = Math.max(count[0], Math.max(count[1], count[2]));
+
+        // 최다 정답자 리스트
+        ArrayList<Integer> resultList = new ArrayList<>();
+        for (int i = 0; i < count.length; i++) {
+            if (count[i] == maxCount) {
+                resultList.add(i + 1); // 배열 인덱스는 0부터 시작하므로 +1
+            }
+        }
+
+        // 리스트 -> 배열
+        int[] resultArray = new int[resultList.size()];
+        for (int i = 0; i < resultList.size(); i++) {
+            resultArray[i] = resultList.get(i);
+        }
+        return resultArray;
+    }
+}

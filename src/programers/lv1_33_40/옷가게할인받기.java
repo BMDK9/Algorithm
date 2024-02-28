@@ -1,4 +1,4 @@
-package programers.lv1_21_40;
+package programers.lv1_33_40;
 
 public class 옷가게할인받기 {
     class Solution {

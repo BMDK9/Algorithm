@@ -1,4 +1,4 @@
-package programers.lv1_21_40;
+package programers.lv1_33_40;
 
 public class 최대공약수최소공배수 {
 

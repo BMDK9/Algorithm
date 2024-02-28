@@ -1,4 +1,4 @@
-package programers.lv1_21_40;
+package programers.lv1_33_40;
 
 
 //네오와 프로도가 숫자놀이를 하고 있습니다.

@@ -1,10 +1,4 @@
-package programers.lv1_21_40;
-
-import javax.swing.plaf.synth.SynthRadioButtonMenuItemUI;
-import java.util.Collections;
-import java.util.SimpleTimeZone;
-
-import static java.lang.Integer.reverse;
+package programers.lv1_33_40;
 
 public class 푸드파이트 {
     public String solution(int[] food) {

@@ -1,4 +1,4 @@
-package junyoungQuiz.study;
+package junyoungQuiz.study.baeckJun;
 
 import java.util.Scanner;
 

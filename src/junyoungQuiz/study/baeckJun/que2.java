@@ -1,4 +1,4 @@
-package junyoungQuiz.study;
+package junyoungQuiz.study.baeckJun;
 
 import java.io.BufferedReader;
 import java.io.IOException;

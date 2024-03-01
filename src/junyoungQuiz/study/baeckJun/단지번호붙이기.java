@@ -3,9 +3,10 @@ package junyoungQuiz.study.baeckJun;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
-import java.util.Map;
+import java.util.List;
 import java.util.Queue;
 
 public class 단지번호붙이기 {
@@ -25,7 +26,7 @@ public class 단지번호붙이기 {
     static int[] dy = {0, 0, -1, 1};
     static boolean[][] visited;
     static int[][] map;
-    static Map<Integer, Integer> count = new HashMap<>();
+    static List<Integer> count = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         setting();
@@ -35,22 +36,22 @@ public class 단지번호붙이기 {
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map.length; j++) {
                 if (map[i][j] == 1 && !visited[i][j]) {
-                    bfs(i, j, answer, countDanJi);
+                    bfs(i, j, countDanJi);
                     answer++;
                 }
             }
         }
+        Collections.sort(count);
         System.out.println(answer);
         for (int i = 0; i < answer; i++) {
             System.out.println(count.get(i));
         }
     }
 
-    static void bfs(int row, int col, int answer, int countDanJi) {
+    static void bfs(int row, int col, int countDanJi) {
         Queue<Node> q = new LinkedList<>();
         visited[row][col] = true;
         countDanJi++;
-        count.put(answer, countDanJi);
         Node start = new Node(row, col);
         q.offer(start);
 
@@ -67,11 +68,11 @@ public class 단지번호붙이기 {
                 if (map[nx][ny] != 0 && !visited[nx][ny]) {
                     visited[nx][ny] = true;
                     countDanJi++;
-                    count.replace(answer, countDanJi);
                     q.offer(new Node(nx, ny));
                 }
             }
         }
+        count.add(countDanJi);
     }
 
     private static void setting() throws IOException {

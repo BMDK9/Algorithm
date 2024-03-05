@@ -27,21 +27,21 @@ public class 토마토 {
     public static void main(String[] args) throws IOException {
         init();
 //        while (true) {
-            for (int i = 0; i < box.length; i++) {
-                for (int j = 0; j < box[i].length; j++) {
-                    if (box[i][j] == 1) {
-                        bfs(i, j);
-                    }
+        for (int i = 0; i < box.length; i++) {
+            for (int j = 0; j < box[i].length; j++) {
+                if (box[i][j] == 1) {
+                    bfs(i, j);
                 }
-                day++;
             }
-//        }
-//        for (int i = 0; i < box.length; i++) {
-//            System.out.println();
-//            for (int j = 0; j < box[i].length; j++) {
-//                System.out.print(box[i][j] + " ");
-//            }
-//        }
+            day++;
+        }
+//    }
+        for (int i = 0; i < box.length; i++) {
+            System.out.println();
+            for (int j = 0; j < box[i].length; j++) {
+                System.out.print(box[i][j] + " ");
+            }
+        }
 
         checkFalse();
         System.out.println(day);

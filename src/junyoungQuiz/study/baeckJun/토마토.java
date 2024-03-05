@@ -54,11 +54,11 @@ public class 토마토 {
 //                }
 //            }
 //        }
-        checkFalse();
+        checkZero();
         System.out.println(day - 1);
     }
 
-    private static void checkFalse() {
+    private static void checkZero() {
         for (int i = 0; i < box.length; i++) {
             for (int j = 0; j < box[0].length; j++) {
                 if (box[i][j] == 0) {

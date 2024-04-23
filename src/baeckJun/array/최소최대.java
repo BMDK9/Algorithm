@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class MinMax {
+public class 최소최대 {
 
     public static void main(String[] args) throws IOException {
         // 배열 안쓰고

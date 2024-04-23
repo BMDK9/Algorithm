@@ -1,4 +1,4 @@
-package baeckJun.array;
+package baeckJun.ㄹ1차원배열;
 
 import java.io.BufferedReader;
 import java.io.IOException;

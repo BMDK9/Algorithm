@@ -1,4 +1,4 @@
-package baeckJun.condition;
+package baeckJun.ㄴ조건문;
 
 import java.io.BufferedReader;
 import java.io.IOException;

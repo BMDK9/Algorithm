@@ -1,4 +1,4 @@
-package baeckJun.string;
+package baeckJun.ㅁ문자열;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -8,12 +8,12 @@ import java.util.StringTokenizer;
 public class 오븐시계 {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(bf.readLine());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
         int startH = Integer.parseInt(st.nextToken());
         int startM = Integer.parseInt(st.nextToken());
-        int takeTime = Integer.parseInt(bf.readLine());
+        int takeTime = Integer.parseInt(br.readLine());
 
         int totalMin = (startH * 60) + startM + takeTime;
 

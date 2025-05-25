@@ -19,7 +19,7 @@ public class 회사에있는사람 {
                 String workerStatus = st.nextToken();
                 workers.put(workerName, workerStatus);
             }
-            String[] names = (String[]) workers.keySet().toArray(new String[workers.size()]);
+            String[] names = workers.keySet().toArray(new String[workers.size()]);
             for (int i = names.length - 1; i >= 0; i--) {
                 if (workers.get(names[i]).equals("enter")) { System.out.println(names[i]); }
             }
